@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Airpods - Premium Audio Experience</title>
+    <meta name="description" content="Shop the best Boat Airpods with premium sound quality and design">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Boat Airpods</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                <li><a href="#" class="nav-link" onclick="showLogin()">Login</a></li>
+            </ul>
+            <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Home Banner -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium Boat Airpods</h1>
+                <p>Experience superior sound quality with our latest collection</p>
+                <button class="btn btn-primary" onclick="scrollToProducts()">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">🎧</div>
+                    <h3>Boat Airdopes 131</h3>
+                    <p class="price">₹1,299</p>
+                    <p class="description">40 hours playback with beast mode</p>
+                    <button class="btn btn-secondary" onclick="addToWishlist('Boat Airdopes 131')">Add to Wishlist</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🎧</div>
+                    <h3>Boat Airdopes 441</h3>
+                    <p class="price">₹2,499</p>
+                    <p class="description">Dual drivers with ANC technology</p>
+                    <button class="btn btn-secondary" onclick="addToWishlist('Boat Airdopes 441')">Add to Wishlist</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🎧</div>
+                    <h3>Boat Airdopes 800</h3>
+                    <p class="price">₹3,999</p>
+                    <p class="description">Premium ANC with 100 hours playback</p>
+                    <button class="btn btn-secondary" onclick="addToWishlist('Boat Airdopes 800')">Add to Wishlist</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="form-section">
+        <div class="container">
+            <h2 class="section-title">Register</h2>
+            <form id="registerForm" class="form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="regName" placeholder="Enter your name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="regEmail" placeholder="Enter your email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="regPassword" placeholder="Enter password" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Orders Section -->
+    <section id="orders" class="info-section">
+        <div class="container">
+            <h2 class="section-title">My Orders</h2>
+            <div class="order-list">
+                <div class="order-item">
+                    <p><strong>Order #1001</strong> - Boat Airdopes 131 - ₹1,299</p>
+                    <span class="status delivered">Delivered</span>
+                </div>
+                <div class="order-item">
+                    <p><strong>Order #1002</strong> - Boat Airdopes 441 - ₹2,499</p>
+                    <span class="status pending">Pending</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wishlist Section -->
+    <section id="wishlist" class="info-section">
+        <div class="container">
+            <h2 class="section-title">My Wishlist</h2>
+            <div id="wishlistItems" class="wishlist-items">
+                <p>Your wishlist is empty. Add products to get started!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                    <p>"Amazing sound quality and battery life!"</p>
+                    <p class="reviewer">- Rahul S.</p>
+                </div>
+                <div class="review-card">
+                    <p class="rating">⭐⭐⭐⭐</p>
+                    <p>"Great value for money. Comfortable fit."</p>
+                    <p class="reviewer">- Priya K.</p>
+                </div>
+                <div class="review-card">
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                    <p>"Best airpods in this price range!"</p>
+                    <p class="reviewer">- Amit P.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="info-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p>Boat is India's leading audio brand, committed to delivering premium sound experiences at affordable prices. Our Airpods collection combines cutting-edge technology with stylish design.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="form-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info">
+                <p>📧 Email: support@boat.com</p>
+                <p>📞 Phone: +91 1234567890</p>
+                <p>📍 Address: Mumbai, Maharashtra, India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Issue Section -->
+    <section id="report" class="form-section">
+        <div class="container">
+            <h2 class="section-title">Report an Issue</h2>
+            <form id="reportForm" class="form">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="reportName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Issue Description</label>
+                    <textarea id="reportIssue" placeholder="Describe your issue" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Report</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Customer Care -->
+    <section id="care" class="info-section">
+        <div class="container">
+            <h2 class="section-title">Customer Care</h2>
+            <p>We are here to help! Our customer support team is available 24/7 to assist you with any queries or concerns.</p>
+            <ul>
+                <li>30-day return policy</li>
+                <li>1-year warranty on all products</li>
+                <li>Free shipping on orders above ₹999</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Boat Airpods. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLogin()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm" class="form">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
